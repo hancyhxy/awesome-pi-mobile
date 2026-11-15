@@ -128,6 +128,18 @@
       "shotFrom": "https://pi-ios.huddee.com/"
     },
     {
+      "name": "Pi Dev Mobile",
+      "section": "apps",
+      "url": "https://apps.apple.com/us/app/pi-dev-mobile/id6789149807",
+      "platforms": "iPhone, iPad (App Store)",
+      "reach": "Server URL and token for `npx pi-rpc-server` on your computer",
+      "what": "Chat with Pi from the phone and pick the model and thinking level per message.",
+      "price": "Free",
+      "id": "pi-dev-mobile",
+      "shot": "media/pi-dev-mobile.jpg",
+      "shotFrom": "https://apps.apple.com/us/app/pi-dev-mobile/id6789149807"
+    },
+    {
       "name": "Pi Relay",
       "section": "apps",
       "url": "https://apps.apple.com/gb/app/pi-relay/id6768893799",
