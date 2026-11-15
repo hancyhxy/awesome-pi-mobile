@@ -1,0 +1,302 @@
+{
+  "updated": "2026-11-15",
+  "sections": [
+    {
+      "id": "apps",
+      "name": "Phone apps",
+      "intro": "Native iPhone or Android apps that pair with the Pi on your computer."
+    },
+    {
+      "id": "web",
+      "name": "Phone-first web apps",
+      "intro": "Open a page on your phone; a small server or extension next to Pi serves it."
+    },
+    {
+      "id": "notify",
+      "name": "Notifications",
+      "intro": "Get told when Pi finishes or needs you, and answer from the lock screen or a push service."
+    },
+    {
+      "id": "multi",
+      "name": "Multi-agent apps with Pi support",
+      "intro": "Clients for several coding agents that also drive Pi."
+    },
+    {
+      "id": "diy",
+      "name": "Do it yourself",
+      "intro": "No extra app: reach the terminal Pi runs in."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Hey Atu",
+      "section": "apps",
+      "url": "https://heyatu.com/pi?utm_source=github&utm_medium=readme&utm_campaign=awesome-pi-mobile",
+      "platforms": "iPhone, iPad (coming soon); Mac app, Terminal",
+      "reach": "Outbound connection to an end-to-end encrypted relay; no port or VPN",
+      "what": "Continues a terminal Pi session on the phone, with Todo, Updates, Days and Wiki around it. Uses the Pi you already have.",
+      "price": "100 free actions, then paid",
+      "ours": true
+    },
+    {
+      "name": "Remote Pi",
+      "section": "apps",
+      "repo": "jacobaraujo7/remote_pi",
+      "platforms": "iPhone, Android",
+      "reach": "QR pairing over a relay; the community relay can read messages, or self-host it",
+      "what": "Chat with your local Pi and watch tool calls; also a local agent mesh.",
+      "price": "Free",
+      "stars": 493
+    },
+    {
+      "name": "Pi Mobile (Android)",
+      "section": "apps",
+      "repo": "ayagmar/pi-mobile",
+      "platforms": "Android",
+      "reach": "Tailscale",
+      "what": "Browse, resume and steer sessions over Pi's RPC mode.",
+      "price": "Free",
+      "stars": 118
+    },
+    {
+      "name": "Pi Remote iOS",
+      "section": "apps",
+      "repo": "tornikegomareli/pi-remote-ios",
+      "platforms": "iPhone (build with Xcode)",
+      "reach": "Paired WebSocket",
+      "what": "Controls the active terminal session; early preview.",
+      "price": "Free",
+      "stars": 14
+    },
+    {
+      "name": "Pi Remote (Compose)",
+      "section": "apps",
+      "repo": "kikyous/pi-remote",
+      "platforms": "iPhone, Android",
+      "reach": "Local network",
+      "what": "Sessions grouped by project, live view and chat from the couch.",
+      "price": "Free",
+      "stars": 12
+    },
+    {
+      "name": "π Remote",
+      "section": "apps",
+      "repo": "nucleoid/pi-remote",
+      "platforms": "Android",
+      "reach": "WebSocket daemon on your network; not for the open internet",
+      "what": "Monitor and steer a Pi TUI or RPC session.",
+      "price": "Free",
+      "stars": 2
+    },
+    {
+      "name": "Pi Mobile (iOS)",
+      "section": "apps",
+      "repo": "MRL-00/pi-mobile",
+      "platforms": "iPhone",
+      "reach": "Companion server on your Mac",
+      "what": "Projects, sessions and full history, using Pi's documented session files and RPC mode.",
+      "price": "Free",
+      "stars": 1
+    },
+    {
+      "name": "Pi in Pocket",
+      "section": "apps",
+      "url": "https://pi-ios.huddee.com/",
+      "platforms": "iPhone, iPad (App Store)",
+      "reach": "Open-source bridge server on your computer",
+      "what": "Monitor and control Pi; no analytics.",
+      "price": "Free"
+    },
+    {
+      "name": "Pi Relay",
+      "section": "apps",
+      "url": "https://apps.apple.com/gb/app/pi-relay/id6768893799",
+      "platforms": "iPhone (App Store)",
+      "reach": "QR pairing with your own Pi remote",
+      "what": "Browse sessions, navigate trees, fork or clone conversations.",
+      "price": "Free"
+    },
+    {
+      "name": "Pi Remote - PiR",
+      "section": "apps",
+      "url": "https://apps.apple.com/us/app/pi-remote-pir/id6825822048",
+      "platforms": "iPhone (App Store)",
+      "reach": "SSH to your Linux server",
+      "what": "Chat, watch Pi work, review the diff and commit.",
+      "price": "Free, in-app purchases"
+    },
+    {
+      "name": "pi.dev remote (Clever Cloud)",
+      "section": "apps",
+      "url": "https://pi.ai.labs.clever.cloud/",
+      "platforms": "iPhone (open beta), browser",
+      "reach": "Relay hosted by Clever Cloud",
+      "what": "Send prompts, approve tool calls, answer questions, stop a run.",
+      "price": "See site"
+    },
+    {
+      "name": "Pi Pocket",
+      "section": "web",
+      "repo": "tannermidd/pi-pocket",
+      "platforms": "Any browser",
+      "reach": "Self-hosted server",
+      "what": "Durable, multiplayer, mobile-first web app for Pi; runs keep going after a restart.",
+      "price": "Free",
+      "stars": 841
+    },
+    {
+      "name": "pi-agent-dashboard",
+      "section": "web",
+      "repo": "BlackBeltTechnology/pi-agent-dashboard",
+      "platforms": "Any browser",
+      "reach": "Web server next to Pi",
+      "what": "Multi-session view, live chat mirroring and a terminal.",
+      "price": "Free",
+      "stars": 348
+    },
+    {
+      "name": "Pi-Remote (browser)",
+      "section": "web",
+      "repo": "Xpropel/Pi-Remote",
+      "platforms": "Any browser",
+      "reach": "Pi extension serving a web page",
+      "what": "Mirrors a live terminal session to the browser; send messages and commands back.",
+      "price": "Free",
+      "stars": 330
+    },
+    {
+      "name": "pi-phone",
+      "section": "web",
+      "repo": "MaliNamNam/pi-phone",
+      "platforms": "Any browser",
+      "reach": "Local web server",
+      "what": "Mirrors the active session and can start parallel sessions.",
+      "price": "Free",
+      "stars": 61
+    },
+    {
+      "name": "pi-mobile (web)",
+      "section": "web",
+      "repo": "p1rallels/pi-mobile",
+      "platforms": "Any browser",
+      "reach": "Tailscale or Cloudflare Tunnel",
+      "what": "Start, monitor and resume sessions.",
+      "price": "Free",
+      "stars": 28
+    },
+    {
+      "name": "pi-anywhere",
+      "section": "web",
+      "repo": "feng-h/pi-anywhere",
+      "platforms": "Any browser",
+      "reach": "Cloudflare Tunnel",
+      "what": "A chat UI for the same Pi instance; no tmux or terminal emulator.",
+      "price": "Free",
+      "stars": 1
+    },
+    {
+      "name": "pi-knock",
+      "section": "notify",
+      "repo": "Asigers/pi-knock",
+      "platforms": "Pushover, ntfy, webhooks",
+      "reach": "Push service",
+      "what": "Notifies when a task finishes or needs input.",
+      "price": "Free",
+      "stars": 114
+    },
+    {
+      "name": "Pi Pulse",
+      "section": "notify",
+      "url": "https://www.pipulse.dev/",
+      "platforms": "Phone, macOS menu bar",
+      "reach": "Bridge package and a menu bar companion",
+      "what": "Approve, reject or reply to a session from the phone.",
+      "price": "Free"
+    },
+    {
+      "name": "Sesori",
+      "section": "notify",
+      "repo": "sesori-ai/sesori_apps_monorepo",
+      "platforms": "Phone",
+      "reach": "App on your computer",
+      "what": "Notifications for several coding agents, Pi among them.",
+      "price": "See repo",
+      "stars": 143
+    },
+    {
+      "name": "Paseo",
+      "section": "multi",
+      "repo": "getpaseo/paseo",
+      "platforms": "iPhone, Android, desktop, web",
+      "reach": "End-to-end encrypted relay, or your own machine",
+      "what": "Runs Pi, Claude Code, Codex and more in parallel; has a page for Pi.",
+      "price": "Free, open source",
+      "stars": 24067
+    },
+    {
+      "name": "Muxflow",
+      "section": "multi",
+      "repo": "gal064/muxflow",
+      "platforms": "Desktop, Android",
+      "reach": "SSH and tmux",
+      "what": "Notifications when Pi needs input, voice replies, files and Git.",
+      "price": "Free",
+      "stars": 117
+    },
+    {
+      "name": "pi pod",
+      "section": "multi",
+      "repo": "pi-pod/pipod",
+      "platforms": "Browser",
+      "reach": "Your own server",
+      "what": "Runs Pi sessions in remote sandboxes you host.",
+      "price": "Free",
+      "stars": 167
+    },
+    {
+      "name": "SSH + mosh + tmux",
+      "section": "diy",
+      "url": "https://michaelhutchinson.me/blog/working-on-the-pi-from-my-phone/",
+      "platforms": "Any SSH app",
+      "reach": "A private network such as Tailscale",
+      "what": "Keep Pi in tmux and attach from the phone; mosh survives sleep and network changes.",
+      "price": "Free"
+    },
+    {
+      "name": "Pi in Termux",
+      "section": "diy",
+      "url": "https://pontia.dev/blog/pi-coding-agent-remote-control",
+      "platforms": "Android",
+      "reach": "Runs on the phone itself",
+      "what": "Run Pi on the phone without another machine.",
+      "price": "Free"
+    }
+  ],
+  "guides": [
+    {
+      "name": "How I Use Pi Coding Agent Remotely from My Phone",
+      "by": "Daniel Lemky",
+      "url": "https://daniellemky.com/posts/how-i-use-the-pi-coding-agent-remotely-from-my-phone/"
+    },
+    {
+      "name": "Use the Pi coding agent from your phone: SSH, apps or BotBus",
+      "by": "BotBus",
+      "url": "https://botbus.io/en/blog/pi-coding-agent-on-your-phone"
+    },
+    {
+      "name": "How to use Pi coding agent from your phone",
+      "by": "Pontia",
+      "url": "https://pontia.dev/blog/pi-coding-agent-remote-control"
+    },
+    {
+      "name": "Which Pi Mobile Client?",
+      "by": "r/PiCodingAgent",
+      "url": "https://www.reddit.com/r/PiCodingAgent/comments/1xchcra/which_pi_mobile_client/"
+    },
+    {
+      "name": "Are you using pi on mobile?",
+      "by": "r/PiCodingAgent",
+      "url": "https://www.reddit.com/r/PiCodingAgent/comments/1v7wne4/are_you_using_pi_on_mobile/"
+    }
+  ]
+}
