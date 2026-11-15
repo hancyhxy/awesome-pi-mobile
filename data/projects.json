@@ -209,7 +209,8 @@
       "price": "Free",
       "stars": 330,
       "id": "pi-remote-browser",
-      "shot": "media/pi-remote-browser.jpg"
+      "shot": "media/pi-remote-browser.jpg",
+      "wall": false
     },
     {
       "name": "pi-phone",
