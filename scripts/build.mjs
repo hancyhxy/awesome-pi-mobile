@@ -23,14 +23,21 @@ const star = p => (p.repo ? (p.stars != null ? `⭐ ${p.stars >= 1000 ? (p.stars
 const order = (a, b) => (b.repo ? 1 : 0) - (a.repo ? 1 : 0) || (b.stars || 0) - (a.stars || 0) || a.name.localeCompare(b.name);
 const anchor = t => t.toLowerCase().replace(/[^a-z0-9 -]/g, "").trim().replace(/ +/g, "-");
 
+// A card for each project with a screenshot: picture, name, stars, one line, and where the picture comes from.
+const card = p => `<td width="33%" valign="top"><a href="${link(p)}"><img src="${p.shot}" alt="${p.name} on a phone" width="100%"></a><br><b><a href="${link(p)}">${p.name}</a></b>${p.ours ? " ¹" : ""} ${p.repo ? "· " + star(p) : ""}<br>${p.what}<br><sub>Screenshot: <a href="${p.shotFrom || link(p)}">${p.ours ? "sample" : "from the project"}</a></sub></td>`;
+const cards = list => { const withShot = list.filter(p => p.shot); if (!withShot.length) return ""; const rows = []; for (let i = 0; i < withShot.length; i += 3) { const cells = withShot.slice(i, i + 3).map(card); while (cells.length < 3) cells.push(`<td width="33%"></td>`); rows.push(`<tr>${cells.join("")}</tr>`); } return `<table>\n${rows.join("\n")}\n</table>\n\n`; };
+
 const sections = db.sections.map(s => {
-  const rows = db.projects.filter(p => p.section === s.id).sort(order)
+  const list = db.projects.filter(p => p.section === s.id).sort(order);
+  const rows = list
     .map(p => `| [${p.name}](${link(p)})${p.ours ? " ¹" : ""} | ${p.platforms} | ${p.reach} | ${star(p)} | ${p.what} |`);
-  return `## ${s.name}\n\n${s.intro}\n\n| Project | Platforms | How the phone reaches Pi | Stars | What you get |\n|---|---|---|---|---|\n${rows.join("\n")}\n`;
+  return `## ${s.name}\n\n${s.intro}\n\n${cards(list)}| Project | Platforms | How the phone reaches Pi | Stars | What you get |\n|---|---|---|---|---|\n${rows.join("\n")}\n`;
 }).join("\n");
 
 const n = db.projects.length;
 const readme = `# Awesome Pi Mobile
+
+<img src="media/wall.png" alt="Screenshots of Pi phone apps and web UIs side by side" width="100%">
 
 Every way to use the [Pi coding agent](https://github.com/earendil-works/pi) from your phone: native apps, phone-first web apps, notifications, multi-agent clients and plain SSH.
 
@@ -71,7 +78,9 @@ An entry needs to work with Pi from a phone and be available to try today, or sa
 
 ---
 
-¹ Hey Atu is made by the maintainers of this list. It is listed with the same fields as every other project.
+¹ Hey Atu is made by the maintainers of this list. It is listed with the same fields as every other project. Its picture is sample content; the iPhone app is coming soon.
+
+Screenshots come from each project's App Store page, README or site, and belong to their owners. Want yours changed or removed? Open an issue.
 
 [CC0](LICENSE): to the extent possible under law, the authors have waived all copyright to this list.
 `;

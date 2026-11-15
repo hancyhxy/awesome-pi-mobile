@@ -1,5 +1,7 @@
 # Awesome Pi Mobile
 
+<img src="media/wall.png" alt="Screenshots of Pi phone apps and web UIs side by side" width="100%">
+
 Every way to use the [Pi coding agent](https://github.com/earendil-works/pi) from your phone: native apps, phone-first web apps, notifications, multi-agent clients and plain SSH.
 
 Pi runs in a terminal on your computer and has no official phone app. These 25 projects keep Pi where your code is and bring the session to your pocket: follow the work, answer its questions, steer it or start a new run.
@@ -21,6 +23,10 @@ Updated 2026-11-15. Star counts come from GitHub on that date.
 
 Native iPhone or Android apps that pair with the Pi on your computer.
 
+<table>
+<tr><td width="33%" valign="top"><a href="https://github.com/jacobaraujo7/remote_pi"><img src="media/remote-pi.jpg" alt="Remote Pi on a phone" width="100%"></a><br><b><a href="https://github.com/jacobaraujo7/remote_pi">Remote Pi</a></b> · ⭐ 493<br>Chat with your local Pi and watch tool calls; also a local agent mesh.<br><sub>Screenshot: <a href="https://apps.apple.com/us/app/remote-pi-coding-agent/id6773499691">from the project</a></sub></td><td width="33%"></td><td width="33%"></td></tr>
+</table>
+
 | Project | Platforms | How the phone reaches Pi | Stars | What you get |
 |---|---|---|---|---|
 | [Remote Pi](https://github.com/jacobaraujo7/remote_pi) | iPhone, Android | QR pairing over a relay; the community relay can read messages, or self-host it | ⭐ 493 | Chat with your local Pi and watch tool calls; also a local agent mesh. |
@@ -28,7 +34,7 @@ Native iPhone or Android apps that pair with the Pi on your computer.
 | [Pi Remote iOS](https://github.com/tornikegomareli/pi-remote-ios) | iPhone (build with Xcode) | Paired WebSocket | ⭐ 14 | Controls the active terminal session; early preview. |
 | [Pi Remote (Compose)](https://github.com/kikyous/pi-remote) | iPhone, Android | Local network | ⭐ 12 | Sessions grouped by project, live view and chat from the couch. |
 | [π Remote](https://github.com/nucleoid/pi-remote) | Android | WebSocket daemon on your network; not for the open internet | ⭐ 2 | Monitor and steer a Pi TUI or RPC session. |
-| [Pi Mobile (iOS)](https://github.com/MRL-00/pi-mobile) | iPhone | Companion server on your Mac | ⭐ 1 | Projects, sessions and full history, using Pi's documented session files and RPC mode. |
+| [Pi Companion](https://apps.apple.com/us/app/pi-companion/id6793307134) | iPhone (App Store) | Companion server on your Mac | ⭐ 1 | Projects, sessions and full history, using Pi's documented session files and RPC mode. |
 | [Hey Atu](https://heyatu.com/pi?utm_source=github&utm_medium=readme&utm_campaign=awesome-pi-mobile) ¹ | iPhone, iPad (coming soon); Mac app, Terminal | Outbound connection to an end-to-end encrypted relay; no port or VPN | — | Continues a terminal Pi session on the phone, with Todo, Updates, Days and Wiki around it. Uses the Pi you already have. |
 | [Pi in Pocket](https://pi-ios.huddee.com/) | iPhone, iPad (App Store) | Open-source bridge server on your computer | — | Monitor and control Pi; no analytics. |
 | [Pi Relay](https://apps.apple.com/gb/app/pi-relay/id6768893799) | iPhone (App Store) | QR pairing with your own Pi remote | — | Browse sessions, navigate trees, fork or clone conversations. |
@@ -106,6 +112,8 @@ An entry needs to work with Pi from a phone and be available to try today, or sa
 
 ---
 
-¹ Hey Atu is made by the maintainers of this list. It is listed with the same fields as every other project.
+¹ Hey Atu is made by the maintainers of this list. It is listed with the same fields as every other project. Its picture is sample content; the iPhone app is coming soon.
+
+Screenshots come from each project's App Store page, README or site, and belong to their owners. Want yours changed or removed? Open an issue.
 
 [CC0](LICENSE): to the extent possible under law, the authors have waived all copyright to this list.
