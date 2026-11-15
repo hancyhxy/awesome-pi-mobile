@@ -23,9 +23,11 @@ const star = p => (p.repo ? (p.stars != null ? `⭐ ${p.stars >= 1000 ? (p.stars
 const order = (a, b) => (b.repo ? 1 : 0) - (a.repo ? 1 : 0) || (b.stars || 0) - (a.stars || 0) || a.name.localeCompare(b.name);
 const anchor = t => t.toLowerCase().replace(/[^a-z0-9 -]/g, "").trim().replace(/ +/g, "-");
 
-// A card for each project with a screenshot: picture, name, stars, one line, and where the picture comes from.
-const card = p => `<td width="33%" valign="top"><a href="${link(p)}"><img src="${p.shot}" alt="${p.name} on a phone" width="100%"></a><br><b><a href="${link(p)}">${p.name}</a></b>${p.ours ? " ¹" : ""} ${p.repo ? "· " + star(p) : ""}<br>${p.what}<br><sub>Screenshot: <a href="${p.shotFrom || link(p)}">${p.ours ? "sample" : "from the project"}</a></sub></td>`;
-const cards = list => { const withShot = list.filter(p => p.shot); if (!withShot.length) return ""; const rows = []; for (let i = 0; i < withShot.length; i += 3) { const cells = withShot.slice(i, i + 3).map(card); while (cells.length < 3) cells.push(`<td width="33%"></td>`); rows.push(`<tr>${cells.join("")}</tr>`); } return `<table>\n${rows.join("\n")}\n</table>\n\n`; };
+// A card for each project with a screenshot: picture of its key screen, name, stars, one line, and where the picture comes from.
+// Phone screenshots go four to a row, wide (web) screenshots two to a row, so pictures in a row have the same shape.
+const card = (p, w) => `<td width="${w}" valign="top"><a href="${link(p)}"><img src="${p.shot}" alt="${p.name}: ${p.shotWide ? "web app" : "key screen on a phone"}" width="100%"></a><br><b><a href="${link(p)}">${p.name}</a></b>${p.ours ? " ¹" : ""} ${p.repo ? "· " + star(p) : ""}<br>${p.what}<br><sub>Screenshot: <a href="${p.shotFrom || link(p)}">${p.ours ? "sample" : "from the project"}</a></sub></td>`;
+const grid = (list, n) => { const w = `${Math.floor(100 / n)}%`; const rows = []; for (let i = 0; i < list.length; i += n) { const cells = list.slice(i, i + n).map(p => card(p, w)); while (cells.length < n) cells.push(`<td width="${w}"></td>`); rows.push(`<tr>${cells.join("")}</tr>`); } return rows.length ? `<table>\n${rows.join("\n")}\n</table>\n\n` : ""; };
+const cards = list => grid(list.filter(p => p.shot && !p.shotWide), 4) + grid(list.filter(p => p.shot && p.shotWide), 2);
 
 const sections = db.sections.map(s => {
   const list = db.projects.filter(p => p.section === s.id).sort(order);

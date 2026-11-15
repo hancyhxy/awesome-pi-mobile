@@ -37,7 +37,8 @@
       "what": "Continues a terminal Pi session on the phone, with Todo, Updates, Days and Wiki around it. Uses the Pi you already have.",
       "price": "100 free actions, then paid",
       "ours": true,
-      "id": "hey-atu"
+      "id": "hey-atu",
+      "shot": "media/hey-atu.jpg"
     },
     {
       "name": "Remote Pi",
@@ -61,7 +62,8 @@
       "what": "Browse, resume and steer sessions over Pi's RPC mode.",
       "price": "Free",
       "stars": 118,
-      "id": "pi-mobile-android"
+      "id": "pi-mobile-android",
+      "shot": "media/pi-mobile-android.jpg"
     },
     {
       "name": "Pi Remote iOS",
@@ -72,7 +74,8 @@
       "what": "Controls the active terminal session; early preview.",
       "price": "Free",
       "stars": 14,
-      "id": "pi-remote-ios"
+      "id": "pi-remote-ios",
+      "shot": "media/pi-remote-ios.jpg"
     },
     {
       "name": "Pi Remote (Compose)",
@@ -83,7 +86,8 @@
       "what": "Sessions grouped by project, live view and chat from the couch.",
       "price": "Free",
       "stars": 12,
-      "id": "pi-remote-compose"
+      "id": "pi-remote-compose",
+      "shot": "media/pi-remote-compose.jpg"
     },
     {
       "name": "π Remote",
@@ -94,7 +98,8 @@
       "what": "Monitor and steer a Pi TUI or RPC session.",
       "price": "Free",
       "stars": 2,
-      "id": "pi-remote"
+      "id": "pi-remote",
+      "shot": "media/pi-remote.jpg"
     },
     {
       "name": "Pi Companion",
@@ -106,7 +111,9 @@
       "price": "Free",
       "stars": 1,
       "id": "pi-companion",
-      "url": "https://apps.apple.com/us/app/pi-companion/id6793307134"
+      "url": "https://apps.apple.com/us/app/pi-companion/id6793307134",
+      "shot": "media/pi-companion.jpg",
+      "shotFrom": "https://apps.apple.com/us/app/pi-companion/id6793307134"
     },
     {
       "name": "Pi in Pocket",
@@ -116,7 +123,9 @@
       "reach": "Open-source bridge server on your computer",
       "what": "Monitor and control Pi; no analytics.",
       "price": "Free",
-      "id": "pi-in-pocket"
+      "id": "pi-in-pocket",
+      "shot": "media/pi-in-pocket.jpg",
+      "shotFrom": "https://pi-ios.huddee.com/"
     },
     {
       "name": "Pi Relay",
@@ -126,7 +135,9 @@
       "reach": "QR pairing with your own Pi remote",
       "what": "Browse sessions, navigate trees, fork or clone conversations.",
       "price": "Free",
-      "id": "pi-relay"
+      "id": "pi-relay",
+      "shot": "media/pi-relay.jpg",
+      "shotFrom": "https://apps.apple.com/gb/app/pi-relay/id6768893799"
     },
     {
       "name": "Pi Remote - PiR",
@@ -136,7 +147,9 @@
       "reach": "SSH to your Linux server",
       "what": "Chat, watch Pi work, review the diff and commit.",
       "price": "Free, in-app purchases",
-      "id": "pi-remote-pir"
+      "id": "pi-remote-pir",
+      "shot": "media/pi-remote-pir.jpg",
+      "shotFrom": "https://apps.apple.com/us/app/pi-remote-pir/id6825822048"
     },
     {
       "name": "pi.dev remote (Clever Cloud)",
@@ -157,7 +170,9 @@
       "what": "Durable, multiplayer, mobile-first web app for Pi; runs keep going after a restart.",
       "price": "Free",
       "stars": 841,
-      "id": "pi-pocket"
+      "id": "pi-pocket",
+      "shot": "media/pi-pocket.jpg",
+      "shotWide": true
     },
     {
       "name": "pi-agent-dashboard",
@@ -165,10 +180,12 @@
       "repo": "BlackBeltTechnology/pi-agent-dashboard",
       "platforms": "Any browser",
       "reach": "Web server next to Pi",
-      "what": "Multi-session view, live chat mirroring and a terminal.",
+      "what": "Multi-session dashboard with live chat mirroring and a terminal; its mobile layout (swipe drawer, large touch targets) works over mDNS or a zrok tunnel.",
       "price": "Free",
       "stars": 348,
-      "id": "pi-agent-dashboard"
+      "id": "pi-agent-dashboard",
+      "shot": "media/pi-agent-dashboard.jpg",
+      "shotWide": true
     },
     {
       "name": "Pi-Remote (browser)",
@@ -179,7 +196,8 @@
       "what": "Mirrors a live terminal session to the browser; send messages and commands back.",
       "price": "Free",
       "stars": 330,
-      "id": "pi-remote-browser"
+      "id": "pi-remote-browser",
+      "shot": "media/pi-remote-browser.jpg"
     },
     {
       "name": "pi-phone",
@@ -190,7 +208,9 @@
       "what": "Mirrors the active session and can start parallel sessions.",
       "price": "Free",
       "stars": 61,
-      "id": "pi-phone"
+      "id": "pi-phone",
+      "shot": "media/pi-phone.jpg",
+      "shotWide": true
     },
     {
       "name": "pi-mobile (web)",
@@ -223,7 +243,9 @@
       "what": "Notifies when a task finishes or needs input.",
       "price": "Free",
       "stars": 114,
-      "id": "pi-knock"
+      "id": "pi-knock",
+      "shot": "media/pi-knock.jpg",
+      "shotWide": true
     },
     {
       "name": "Pi Pulse",
@@ -233,18 +255,22 @@
       "reach": "Bridge package and a menu bar companion",
       "what": "Approve, reject or reply to a session from the phone.",
       "price": "Free",
-      "id": "pi-pulse"
+      "id": "pi-pulse",
+      "shot": "media/pi-pulse.jpg",
+      "shotFrom": "https://apps.apple.com/us/app/pi-pulse/id6759630191"
     },
     {
       "name": "Sesori",
-      "section": "notify",
+      "section": "multi",
       "repo": "sesori-ai/sesori_apps_monorepo",
-      "platforms": "Phone",
+      "platforms": "iPhone, Android, desktop",
       "reach": "App on your computer",
-      "what": "Notifications for several coding agents, Pi among them.",
+      "what": "One phone app for several coding agents, Pi among them: get notified when one needs you and answer from the phone.",
       "price": "See repo",
       "stars": 143,
-      "id": "sesori"
+      "id": "sesori",
+      "shot": "media/sesori.jpg",
+      "shotFrom": "https://apps.apple.com/us/app/sesori-remote-ai-coding-agent/id6760642500"
     },
     {
       "name": "Paseo",
@@ -255,7 +281,8 @@
       "what": "Runs Pi, Claude Code, Codex and more in parallel; has a page for Pi.",
       "price": "Free, open source",
       "stars": 24067,
-      "id": "paseo"
+      "id": "paseo",
+      "shot": "media/paseo.jpg"
     },
     {
       "name": "Muxflow",
@@ -266,18 +293,20 @@
       "what": "Notifications when Pi needs input, voice replies, files and Git.",
       "price": "Free",
       "stars": 117,
-      "id": "muxflow"
+      "id": "muxflow",
+      "shot": "media/muxflow.jpg"
     },
     {
       "name": "pi pod",
       "section": "multi",
       "repo": "pi-pod/pipod",
-      "platforms": "Browser",
+      "platforms": "iPhone, Android, terminal",
       "reach": "Your own server",
-      "what": "Runs Pi sessions in remote sandboxes you host.",
+      "what": "Runs Pi sessions in remote sandboxes you host, with native phone apps to start and follow them.",
       "price": "Free",
       "stars": 167,
-      "id": "pi-pod"
+      "id": "pi-pod",
+      "shot": "media/pi-pod.jpg"
     },
     {
       "name": "SSH + mosh + tmux",
